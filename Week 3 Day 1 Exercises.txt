@@ -1,0 +1,67 @@
+Exercise 1
+
+var x = 7549862;
+
+function reverseNum(x)
+	{
+		x = x + "";
+		return x.split("").reverse().join("");
+	}
+console.log(reverseNum(x));
+
+
+Exercise 2
+var a = 51;
+
+var b = 17;
+
+var c = 1;
+
+function testPrime(x)
+{
+
+	if (x === 1)
+  	{
+	var w = "Neither prime or composite";
+    	return w;
+  	}
+  
+	else if(x === 2)
+  	{
+    	return true;
+  	}
+
+	else
+  	{
+    		for(var y = 2; y < x; y++)
+    		{
+      			if(x % y === 0)
+      			{
+        		return false;
+      			}
+    		}
+	var t = "The number is prime";
+    	return t;  
+  	}
+}
+
+console.log(testPrime(c));
+
+
+Exercise 3
+
+function letterCounter(string, letter) 
+{
+ 	var letterNum = 0;
+ 	for (var place = 0; place < string.length; place ++) 
+	{
+    	if (string.charAt(place) == letter) 
+		{
+      		letterNum += 1;
+      		}
+  	}
+  return letterNum;
+}
+
+console.log(letterCounter('tech talent south', 't'));
+
